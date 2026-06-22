@@ -1,41 +1,70 @@
 # My Agent Framework
 
-一个面向学习的 Mini Agent Framework。
+一个面向学习的 Mini Agent Framework，用来从零手写并理解 Agent 框架的核心链路。
 
-这个项目按照“从零手写 Agent 框架”的思路逐阶段实现，核心目标不是一次性做成生产框架，而是把 `Message -> LLM -> Agent -> Tool -> ReAct -> Memory -> RAG` 这条主链路拆开，让每一层都能单独阅读、运行和测试。
+这个项目不是一套大而全的生产框架，而是一条可运行、可测试、可逐步拆解的学习路线：  
+`Message -> LLM -> Agent -> Tool -> ReAct -> Memory -> RAG`
 
-## 项目介绍
+## 这个项目适合谁
 
-当前项目已经包含以下能力：
+适合下面这类需求：
+
+- 想从零理解 Agent 框架，而不是直接套现成框架
+- 想把 `Message / Tool / ReAct / Memory / RAG` 串成一条清楚的主链
+- 想要一套能运行、能测试、能逐步讲解的学习型项目
+- 想在后续把学习版逐步演进到更真实的工具调用框架
+
+## 你能学到什么
+
+当前项目已经覆盖这些核心模块：
 
 - `Message`：统一消息对象与角色定义
 - `LLM`：最小真实模型封装
 - `SimpleAgent`：最小对话 Agent
-- `Tool / ToolRegistry / ToolResult`：工具抽象与注册执行
-- `ToolAgent`：单次工具调用 Agent
+- `Tool / ToolRegistry / ToolResult`：工具抽象、注册与执行
+- `ToolAgent`：单次工具调用链路
 - `ReActAgent`：多步 `Thought -> Action -> Observation -> Final Answer`
 - `SimpleMemory / MemoryTool`：轻量显式记忆
 - `Document / Splitter / Retriever / RAGTool`：简化版本地知识库检索
 
-项目中同时包含：
+项目同时提供：
 
-- 可直接运行的 `examples/`
-- 面向核心能力的 `tests/`
-- 若干讲解文档，帮助理解设计过程
+- `examples/`：最小可运行示例
+- `tests/`：核心链路测试
+- `docs/`：时序图、walkthrough 和设计说明
 
-## 安装方式
+## 一分钟上手
 
 本项目使用 `uv` 管理 Python 环境。
 
 ```bash
 uv sync
+uv run pytest
+uv run python examples/01_simple_chat.py
 ```
 
-如果你只想先运行测试：
+如果你只想快速浏览完整学习链路，建议按下面顺序运行：
 
 ```bash
-uv run pytest
+uv run python examples/01_simple_chat.py
+uv run python examples/03_tool_agent.py
+uv run python examples/04_react_agent.py
+uv run python examples/05_memory_agent.py
+uv run python examples/06_rag_agent.py
 ```
+
+## 学习路径
+
+建议按这条顺序阅读和运行：
+
+1. `Message`：理解 system / user / assistant / tool 这些消息对象
+2. `LLM`：理解消息如何转换成模型接口输入
+3. `SimpleAgent`：理解 history 如何积累
+4. `Tool`：理解外部能力如何被统一包装
+5. `ToolAgent`：理解单次工具调用
+6. `ReActAgent`：理解多步推理循环
+7. `Memory`：理解显式长期记忆
+8. `RAG`：理解“检索”和“生成”的边界
 
 ## 环境变量配置
 
