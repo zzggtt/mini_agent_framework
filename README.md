@@ -80,8 +80,8 @@ cp .env.example .env
 
 ```env
 OPENAI_API_KEY=your-api-key
-OPENAI_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
-OPENAI_MODEL=deepseek-v3-2-251201
+OPENAI_BASE_URL=https://your-llm-provider.example.com/v1
+OPENAI_MODEL=your-model-name
 OPENAI_TEMPERATURE=0.7
 OPENAI_MAX_TOKENS=
 ```
