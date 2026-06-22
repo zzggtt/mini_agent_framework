@@ -1,0 +1,168 @@
+README.md
+  s_643dc57b520fef::t_fbceaf2fc4603b 3,5-6,8,10-19,24-25,30,32-34,36,42-43,46,49-53,56-67 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a394e40b482257dbebb5c15","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Single":3},{"Range":[5,6]},{"Single":8},{"Range":[10,19]},{"Range":[24,25]},{"Single":30},{"Range":[32,34]},{"Single":36},{"Range":[42,43]},{"Single":46},{"Range":[49,53]},{"Range":[56,67]}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b1b39150d3d56da4dfc4e865e1a3c4a566c72202",
+  "prompts": {},
+  "sessions": {
+    "s_643dc57b520fef": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a283fd74651fb64bfd65d28",
+        "model": "gpt-5.4__dev"
+      },
+      "human_author": "zzggtt <zzggtt@users.noreply.github.com>"
+    }
+  },
+  "attestation_metadata": {
+    "README.md": [
+      {
+        "hash": "s_643dc57b520fef::t_fbceaf2fc4603b",
+        "line_ranges": [
+          {
+            "Single": 3
+          },
+          {
+            "Range": [
+              5,
+              6
+            ]
+          },
+          {
+            "Single": 8
+          },
+          {
+            "Range": [
+              10,
+              19
+            ]
+          },
+          {
+            "Range": [
+              24,
+              25
+            ]
+          },
+          {
+            "Single": 30
+          },
+          {
+            "Range": [
+              32,
+              34
+            ]
+          },
+          {
+            "Single": 36
+          },
+          {
+            "Range": [
+              42,
+              43
+            ]
+          },
+          {
+            "Single": 46
+          },
+          {
+            "Range": [
+              49,
+              53
+            ]
+          },
+          {
+            "Range": [
+              56,
+              67
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a394e40b482257dbebb5c15",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Single": 3
+              },
+              {
+                "Range": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "Single": 8
+              },
+              {
+                "Range": [
+                  10,
+                  19
+                ]
+              },
+              {
+                "Range": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "Single": 30
+              },
+              {
+                "Range": [
+                  32,
+                  34
+                ]
+              },
+              {
+                "Single": 36
+              },
+              {
+                "Range": [
+                  42,
+                  43
+                ]
+              },
+              {
+                "Single": 46
+              },
+              {
+                "Range": [
+                  49,
+                  53
+                ]
+              },
+              {
+                "Range": [
+                  56,
+                  67
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_643dc57b520fef": {
+      "tool": "trae",
+      "conversation_id": "6a283fd74651fb64bfd65d28",
+      "session_id": "6a283fd74651fb64bfd65d28",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_643dc57b520fef::t_fbceaf2fc4603b": {
+      "tool": "trae",
+      "conversation_id": "6a283fd74651fb64bfd65d28",
+      "session_id": "6a283fd74651fb64bfd65d28",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
